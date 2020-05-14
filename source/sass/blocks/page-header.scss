@@ -25,3 +25,27 @@
     opacity: 1;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .page-header__phone {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .page-header__phone {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

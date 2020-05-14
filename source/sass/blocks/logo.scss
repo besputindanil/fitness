@@ -2,3 +2,17 @@
   width: 89px;
   height: 20px;
 }
+
+@media (max-width: $tablet-width) {
+  .logo img {
+    width: 82px;
+    height: 17px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .logo img {
+    width: 65px;
+    height: 15px;
+  }
+}

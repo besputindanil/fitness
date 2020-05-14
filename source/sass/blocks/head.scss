@@ -11,3 +11,27 @@
     background-image: url("../img/bg-head-desktop@2x.jpg");
   }
 }
+
+@media (max-width: $tablet-width) {
+  .head {
+    min-height: 554px;
+
+    background-image: url("../img/bg-head-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-head-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .head {
+    min-height: 491px;
+
+    background-image: url("../img/bg-head-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-head-mobile@2x.jpg");
+    }
+  }
+}
