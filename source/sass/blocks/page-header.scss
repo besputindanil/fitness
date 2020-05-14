@@ -1,0 +1,27 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.page-header__phone {
+  margin-top: -2px;
+
+  font-family: $bebas-neue-font;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}

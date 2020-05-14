@@ -1,0 +1,13 @@
+.head {
+  min-height: 658px;
+
+  background-color: #b4042c;
+  background-image: url("../img/bg-head-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-head-desktop@2x.jpg");
+  }
+}
