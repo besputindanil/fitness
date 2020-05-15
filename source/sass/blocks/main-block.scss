@@ -76,10 +76,10 @@
   background-image: url("../img/bg-main-block-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-main-block-desktop@2x.jpg");
-    background-size: 500px auto;
   }
 }
 
@@ -107,6 +107,8 @@
   &:hover,
   &:focus {
     opacity: 0.8;
+
+    transition: $animation;
   }
 
   &:active {
@@ -154,7 +156,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-main-block-tablet@2x.jpg");
-      background-size: 324px auto;
     }
   }
 

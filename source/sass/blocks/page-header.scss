@@ -19,6 +19,8 @@
   &:hover,
   &:focus {
     opacity: 0.8;
+
+    transition: $animation;
   }
 
   &:active {
