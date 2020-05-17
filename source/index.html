@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
     <title>Фитнес-центр Sypergym</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
@@ -87,34 +87,171 @@
         </ul>
       </div>
     </div>
-    <section class="gym container">
-      <div class="gym__text">
-        <div class="gym__header">
-          <h2>Тренажерный зал</h2>
-          <p>Просторный зал площадью 900 кв/м</p>
+    <main class="page-main">
+      <section class="gym container">
+        <div class="gym__text">
+          <div class="gym__header">
+            <h2>Тренажерный зал</h2>
+            <p>Просторный зал площадью 900 кв/м</p>
+          </div>
+          <div class="gym__description">
+            <p>
+              Supergym – самый большой фитнес центр за Уралом и идеальное место
+              для укрепления тела и здоровья. Тренажерный зал оснащен всем
+              необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p>
+              В зале расположены отдельная зона для Crossfit и кардио-зона с 40
+              тренажерами. Также в фитнес центре есть несколько оборудованных
+              залов для различных видов групповых занятий.
+            </p>
+          </div>
         </div>
-        <div class="gym__description">
-          <p>
-            Supergym – самый большой фитнес центр за Уралом и идеальное место
-            для укрепления тела и здоровья. Тренажерный зал оснащен всем
-            необходимым современным оборудованием для всех спортсменов.
-          </p>
-          <p>
-            В зале расположены отдельная зона для Crossfit и кардио-зона с 40
-            тренажерами. Также в фитнес центре есть несколько оборудованных
-            залов для различных видов групповых занятий.
-          </p>
+        <div class="gym__image"></div>
+        <div class="gym__media">
+          <button class="gym__toggle" type="button">
+            <span class="visually-hidden">Воспроизвести видео</span>
+            <svg class="gym__icon" width="17" height="17">
+              <use xlink:href="img/sprite_auto.svg#icon-play"></use>
+            </svg>
+          </button>
         </div>
-      </div>
-      <div class="gym__image"></div>
-      <div class="gym__media">
-        <button class="gym__toggle" type="button">
-          <span class="visually-hidden">Воспроизвести видео</span>
-          <svg class="gym__icon" width="17" height="17">
-            <use xlink:href="img/sprite_auto.svg#icon-play"></use>
-          </svg>
-        </button>
-      </div>
-    </section>
+      </section>
+      <section class="subscription">
+        <div class="subscription__wrapper container tabs">
+          <h2>Абонементы</h2>
+          <ul class="subscription__time-list">
+            <li class="subscription__time-item">
+              <a
+                class="subscription__time-link tabs__toggle tabs__toggle--active"
+                data-tab-name="tabs__item-first"
+                href="#"
+                >1 месяц</a
+              >
+            </li>
+            <li class="subscription__time-item">
+              <a
+                class="subscription__time-link tabs__toggle"
+                data-tab-name="tabs__item-second"
+                href="#"
+                >6 месяцев</a
+              >
+            </li>
+            <li class="subscription__time-item">
+              <a
+                class="subscription__time-link tabs__toggle"
+                data-tab-name="tabs__item-third"
+                href="#"
+                >12 месяцев</a
+              >
+            </li>
+          </ul>
+          <div class="tabs__item tabs__item--active tabs__item-first">
+            <ul class="subscription__info-list">
+              <li class="subscription__info-item">
+                <h3>С тренером</h3>
+                <span class="subscription__time">12 занятий</span>
+                <div class="subscription__price" data-price="5000">
+                  5000 <span class="subscription__currency">₽</span>
+                </div>
+                <a href="#" class="subscription__button button">
+                  Купить абонемент
+                </a>
+              </li>
+              <li class="subscription__info-item">
+                <h3>Дневной</h3>
+                <span class="subscription__time">с 8:00 до 17:00</span>
+                <div class="subscription__price" data-price="1700">
+                  1700 <span class="subscription__currency">₽</span>
+                </div>
+                <a href="#" class="subscription__button button">
+                  Купить абонемент
+                </a>
+              </li>
+              <li class="subscription__info-item">
+                <h3>Полный день</h3>
+                <span class="subscription__time">с 8:00 до 22:00</span>
+                <div class="subscription__price" data-price="2700">
+                  2700 <span class="subscription__currency">₽</span>
+                </div>
+                <a href="#" class="subscription__button button">
+                  Купить абонемент
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__item tabs__item-second">
+            <ul class="subscription__info-list">
+              <li class="subscription__info-item">
+                <h3>С тренером</h3>
+                <span class="subscription__time">12 занятий</span>
+                <div class="subscription__price" data-price="20000">
+                  20000 <span class="subscription__currency">₽</span>
+                </div>
+                <a href="#" class="subscription__button button">
+                  Купить абонемент
+                </a>
+              </li>
+              <li class="subscription__info-item">
+                <h3>Дневной</h3>
+                <span class="subscription__time">с 8:00 до 17:00</span>
+                <div class="subscription__price" data-price="7000">
+                  7000 <span class="subscription__currency">₽</span>
+                </div>
+                <a href="#" class="subscription__button button">
+                  Купить абонемент
+                </a>
+              </li>
+              <li class="subscription__info-item">
+                <h3>Полный день</h3>
+                <span class="subscription__time">с 8:00 до 22:00</span>
+                <div class="subscription__price" data-price="11000">
+                  11000 <span class="subscription__currency">₽</span>
+                </div>
+                <a href="#" class="subscription__button button">
+                  Купить абонемент
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__item tabs__item-third">
+            <ul class="subscription__info-list">
+              <li class="subscription__info-item">
+                <h3>С тренером</h3>
+                <span class="subscription__time">12 занятий</span>
+                <div class="subscription__price" data-price="35000">
+                  35000 <span class="subscription__currency">₽</span>
+                </div>
+                <a href="#" class="subscription__button button">
+                  Купить абонемент
+                </a>
+              </li>
+              <li class="subscription__info-item">
+                <h3>Дневной</h3>
+                <span class="subscription__time">с 8:00 до 17:00</span>
+                <div class="subscription__price" data-price="13000">
+                  13000 <span class="subscription__currency">₽</span>
+                </div>
+                <a href="#" class="subscription__button button">
+                  Купить абонемент
+                </a>
+              </li>
+              <li class="subscription__info-item">
+                <h3>Полный день</h3>
+                <span class="subscription__time">с 8:00 до 22:00</span>
+                <div class="subscription__price" data-price="20000">
+                  20000 <span class="subscription__currency">₽</span>
+                </div>
+                <a href="#" class="subscription__button button">
+                  Купить абонемент
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="promo-block"></section>
+    </main>
+    <script src="js/main.js"></script>
   </body>
 </html>

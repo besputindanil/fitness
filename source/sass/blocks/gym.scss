@@ -2,8 +2,9 @@
   position: relative;
 
   display: flex;
+  flex-wrap: wrap;
   padding-top: 120px;
-  padding-bottom: 235px;
+  padding-bottom: 222px;
 }
 
 .gym__text {
@@ -115,12 +116,6 @@
   &:hover,
   &:focus {
     opacity: 0.8;
-
-    transition: $animation;
-  }
-
-  &:active {
-    opacity: 1;
   }
 }
 

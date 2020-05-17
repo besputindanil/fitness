@@ -16,12 +16,8 @@
 
   &:hover,
   &:focus {
-    box-shadow: 2px 2px rgba(255, 255, 255, 0.5);
+    color: #102654;
 
-    transition: $animation;
-  }
-
-  &:active {
-    opacity: 0.8;
+    background-color: #ffffff;
   }
 }
