@@ -23,13 +23,13 @@
     width: 470px;
     height: 494px;
 
-    background-image: url("../img/bg-subscription-desktop@1x.png");
+    background-image: url("../img/bg-subscription@1x.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-subscription-desktop@2x.png");
+      background-image: url("../img/bg-subscription@2x.png");
     }
   }
 }
