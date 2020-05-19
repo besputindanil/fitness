@@ -1,0 +1,32 @@
+.slick-list {
+  margin-right: -40px;
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slide {
+  margin-right: 40px;
+}
+
+@media (max-width: $tablet-width) {
+  .slick-list {
+    margin-right: -30px;
+  }
+
+  .slick-slide {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .slick-list {
+    margin: 0;
+  }
+
+  .slick-slide {
+    margin: 0;
+  }
+}
