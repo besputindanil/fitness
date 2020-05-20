@@ -38,7 +38,7 @@ for (var i = 0; i < tabToggles.length; i++) {
 }
 
 $(document).ready(function () {
-  $(".slider__list").slick({
+  $(".coaches__list").slick({
     arrows: false,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -60,11 +60,27 @@ $(document).ready(function () {
     ],
   });
 
-  $(".slider__toggle--prev").click(function () {
-    $(".slider__list").slick("slickPrev");
+  $(".coaches__toggle--prev").click(function () {
+    $(".coaches__list").slick("slickPrev");
   });
 
-  $(".slider__toggle--next").click(function () {
-    $(".slider__list").slick("slickNext");
+  $(".coaches__toggle--next").click(function () {
+    $(".coaches__list").slick("slickNext");
+  });
+});
+
+$(document).ready(function () {
+  $(".reviews__list").slick({
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
+
+  $(".reviews__toggle--prev").click(function () {
+    $(".reviews__list").slick("slickPrev");
+  });
+
+  $(".reviews__toggle--next").click(function () {
+    $(".reviews__list").slick("slickNext");
   });
 });

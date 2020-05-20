@@ -24,7 +24,8 @@
 
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     .slider__icon {
       color: #102654;
 

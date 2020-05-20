@@ -61,11 +61,11 @@ $(document).ready(function () {
   });
 
   $(".coaches__toggle--prev").click(function () {
-    $(".slider__list").slick("slickPrev");
+    $(".coaches__list").slick("slickPrev");
   });
 
   $(".coaches__toggle--next").click(function () {
-    $(".slider__list").slick("slickNext");
+    $(".coaches__list").slick("slickNext");
   });
 });
 

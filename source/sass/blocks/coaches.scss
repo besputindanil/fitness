@@ -47,7 +47,8 @@
 .coaches__item {
   position: relative;
 
-  &:hover {
+  &:hover,
+  &:focus {
     h3 {
       bottom: 216px;
     }

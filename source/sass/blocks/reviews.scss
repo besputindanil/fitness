@@ -17,8 +17,7 @@
 
 .reviews__slider {
   position: relative;
-  max-width: 685px;
-  width: 100%;
+  width: 685px;
   margin: 0 auto;
   padding: 0 63px;
 
@@ -38,15 +37,17 @@
 
 .reviews__item {
   display: flex;
+  width: 560px;
   padding: 62px;
 
   color: #ffffff;
 
   background: #1c3374;
-  box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
 }
 
 .reviews img {
+  display: block;
   width: 80px;
   height: 80px;
 
@@ -55,7 +56,7 @@
 
 .reviews__description {
   margin-top: -7px;
-  margin-left: 28px;
+  margin-left: 27px;
 }
 
 .reviews h3 {
@@ -69,4 +70,66 @@
 
 .reviews p {
   margin: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media (max-width: $tablet-width) {
+  .reviews h2 {
+    margin-bottom: 40px;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .reviews__slider {
+    width: 691px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .reviews h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .reviews__slider {
+    width: 300px;
+    padding: 0 37px;
+  }
+
+  .reviews__item {
+    position: relative;
+
+    flex-direction: column;
+    padding: 50px 25px 40px 25px;
+  }
+
+  .reviews__image {
+    position: absolute;
+    top: 41px;
+    left: 41px;
+  }
+
+  .reviews img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .reviews h3 {
+    margin-bottom: 22px;
+    padding-left: 100px;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .reviews__description {
+    margin: 0;
+  }
+
+  .reviews__description p {
+    text-align: center;
+  }
 }
