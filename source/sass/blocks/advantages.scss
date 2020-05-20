@@ -1,0 +1,177 @@
+.advantages {
+  padding-top: 117px;
+  padding-bottom: 120px;
+
+  background-color: #f8f9fc;
+}
+
+.advantages h2 {
+  margin: 0;
+  margin-bottom: 70px;
+
+  font-family: $bebas-neue-font;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+}
+
+.advantages__list {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  box-sizing: border-box;
+}
+
+.advantages__block {
+  display: flex;
+  justify-content: space-between;
+
+  &--top {
+    margin-top: -5px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+
+  width: 33%;
+
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+
+  &--area {
+    padding-bottom: 77px;
+    padding-left: 165px;
+
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+
+    &::before {
+      top: 3px;
+      left: 28px;
+
+      width: 108px;
+      height: 73px;
+
+      background-image: url("../img/900.png");
+    }
+  }
+
+  &--parking {
+    padding-right: 5px;
+    padding-bottom: 77px;
+    padding-left: 105px;
+
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+    &::before {
+      top: 3px;
+      left: 4px;
+
+      width: 72px;
+      height: 73px;
+
+      background-image: url("../img/70.png");
+    }
+  }
+
+  &--comfort {
+    padding-top: 74px;
+    padding-left: 159px;
+
+    &::before {
+      top: 80px;
+      left: 22px;
+
+      width: 108px;
+      height: 73px;
+
+      background-image: url("../img/350.png");
+    }
+  }
+
+  &--experience {
+    padding-top: 74px;
+    padding-right: 5px;
+    padding-left: 105px;
+
+    &::before {
+      top: 80px;
+      left: 4px;
+
+      width: 72px;
+      height: 73px;
+
+      background-image: url("../img/5+.png");
+    }
+  }
+}
+
+.advantages h3 {
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.advantages p {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.advantages__main-item {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  width: 240px;
+  margin-left: -120px;
+
+  padding: 130px 34px 60px 34px;
+
+  color: #ffffff;
+
+  background-color: #1c3374;
+  box-sizing: border-box;
+  text-align: center;
+
+  &::before {
+    content: "100";
+
+    position: absolute;
+    top: 35px;
+    left: 60px;
+
+    font-weight: bold;
+    font-size: 74px;
+    line-height: 111px;
+  }
+}
+
+.advantages__main-item h3 {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 26px;
+  line-height: 39px;
+}
