@@ -56,6 +56,14 @@
     background-size: contain;
   }
 
+  &::after {
+    position: absolute;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: #2e35ac;
+  }
+
   &--area {
     padding-bottom: 77px;
     padding-left: 165px;
@@ -66,10 +74,17 @@
       top: 3px;
       left: 28px;
 
-      width: 108px;
-      height: 73px;
+      width: 102px;
+      height: 53px;
 
       background-image: url("../img/900.png");
+    }
+
+    &::after {
+      content: "кв/м";
+
+      top: 62px;
+      left: 28px;
     }
   }
 
@@ -83,10 +98,17 @@
       top: 3px;
       left: 4px;
 
-      width: 72px;
-      height: 73px;
+      width: 67px;
+      height: 53px;
 
       background-image: url("../img/70.png");
+    }
+
+    &::after {
+      content: "машин";
+
+      top: 62px;
+      left: 4px;
     }
   }
 
@@ -98,10 +120,17 @@
       top: 80px;
       left: 22px;
 
-      width: 108px;
-      height: 73px;
+      width: 103px;
+      height: 53px;
 
       background-image: url("../img/350.png");
+    }
+
+    &::after {
+      content: "мест";
+
+      top: 138px;
+      left: 20px;
     }
   }
 
@@ -114,15 +143,22 @@
       top: 80px;
       left: 4px;
 
-      width: 72px;
-      height: 73px;
+      width: 65px;
+      height: 52px;
 
       background-image: url("../img/5+.png");
+    }
+
+    &::after {
+      content: "лет";
+
+      top: 138px;
+      left: 4px;
     }
   }
 }
 
-.advantages h3 {
+.advantages__item h3 {
   margin: 0;
   margin-bottom: 5px;
 
@@ -160,7 +196,9 @@
 
     position: absolute;
     top: 35px;
-    left: 60px;
+    left: 50%;
+
+    margin-left: -58px;
 
     font-weight: bold;
     font-size: 74px;
@@ -174,4 +212,235 @@
 
   font-size: 26px;
   line-height: 39px;
+}
+
+@media (max-width: $tablet-width) {
+  .advantages {
+    padding-top: 100px;
+    padding-bottom: 95px;
+  }
+
+  .advantages h2 {
+    margin-bottom: 47px;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .advantages__item {
+    width: 50%;
+
+    &--area {
+      padding-right: 35px;
+      padding-bottom: 45px;
+      padding-left: 142px;
+
+      border-bottom: none;
+
+      &::before {
+        top: 7px;
+        left: 26px;
+
+        width: 84px;
+        height: 44px;
+      }
+
+      &::after {
+        top: 54px;
+        left: 26px;
+      }
+    }
+
+    &--parking {
+      padding-right: 30px;
+      padding-bottom: 45px;
+      padding-left: 105px;
+
+      border-bottom: none;
+      &::before {
+        top: 7px;
+        left: 15px;
+
+        width: 54px;
+        height: 44px;
+      }
+
+      &::after {
+        top: 54px;
+        left: 15px;
+      }
+    }
+
+    &--comfort {
+      padding-top: 44px;
+      padding-left: 143px;
+
+      &::before {
+        top: 50px;
+        left: 24px;
+
+        width: 84px;
+        height: 44px;
+      }
+
+      &::after {
+        top: 96px;
+        left: 26px;
+      }
+    }
+
+    &--experience {
+      padding-top: 44px;
+      padding-right: 30px;
+      padding-left: 105px;
+
+      &::before {
+        top: 50px;
+        left: 15px;
+
+        width: 53px;
+        height: 44px;
+      }
+
+      &::after {
+        top: 96px;
+        left: 15px;
+      }
+    }
+  }
+
+  .advantages__item h3 {
+    margin-bottom: 3px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .advantages__main-item {
+    position: relative;
+
+    left: 0;
+
+    width: 442px;
+    margin: 0 auto;
+    padding: 106px 135px 40px 135px;
+
+    &::before {
+      top: 13px;
+    }
+  }
+
+  .advantages__main-item h3 {
+    margin-bottom: 15px;
+
+    font-size: 22px;
+    line-height: 33px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages {
+    padding-top: 70px;
+    padding-bottom: 22px;
+  }
+
+  .advantages h2 {
+    margin-bottom: 57px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .advantages__list {
+    padding: 0;
+  }
+
+  .advantages__block {
+    flex-direction: column;
+  }
+
+  .advantages__item {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0;
+    padding-top: 75px;
+
+    text-align: center;
+
+    &::before {
+      top: 0;
+      left: 50%;
+    }
+
+    &::after {
+      top: 46px;
+      left: 50%;
+    }
+
+    &--area {
+      &::before {
+        margin-left: -42px;
+      }
+
+      &::after {
+        margin-left: -14px;
+      }
+    }
+
+    &--parking {
+      &::before {
+        margin-left: -27px;
+      }
+
+      &::after {
+        margin-left: -20px;
+      }
+    }
+
+    &--comfort {
+      &::before {
+        margin-left: -42px;
+      }
+
+      &::after {
+        margin-left: -14px;
+      }
+    }
+
+    &--experience {
+      &::before {
+        margin-left: -27px;
+      }
+
+      &::after {
+        margin-left: -12px;
+      }
+    }
+  }
+
+  .advantages__item p {
+    width: 71%;
+    margin: 0 auto;
+  }
+
+  .advantages__main-item {
+    width: 100%;
+    margin-bottom: 45px;
+    padding: 0;
+    padding-top: 110px;
+    padding-bottom: 50px;
+
+    &::before {
+      top: 24px;
+    }
+  }
+
+  .advantages__main-item h3 {
+    margin-bottom: 10px;
+  }
+
+  .advantages__main-item p {
+    width: 55%;
+    margin: 0 auto;
+  }
 }
