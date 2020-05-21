@@ -5,3 +5,9 @@
 
   border-top: 1px solid #74819c;
 }
+
+@media (max-width: $tablet-width) {
+  .contacts-container {
+    flex-direction: column;
+  }
+}
