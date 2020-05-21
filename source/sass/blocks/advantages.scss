@@ -32,7 +32,7 @@
 
 .advantages__block {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 
   &--top {
     margin-top: -5px;
@@ -43,8 +43,13 @@
   position: relative;
 
   width: 33%;
+  margin-right: 353px;
 
   box-sizing: border-box;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
 
   &::before {
     content: "";
@@ -181,6 +186,7 @@
   left: 50%;
 
   width: 240px;
+  height: 100%;
   margin-left: -120px;
 
   padding: 130px 34px 60px 34px;
@@ -229,6 +235,7 @@
 
   .advantages__item {
     width: 50%;
+    margin-right: 0;
 
     &--area {
       padding-right: 35px;
@@ -273,6 +280,7 @@
 
     &--comfort {
       padding-top: 44px;
+      padding-right: 35px;
       padding-left: 143px;
 
       &::before {
