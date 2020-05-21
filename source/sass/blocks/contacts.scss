@@ -11,10 +11,7 @@
   margin: 0;
   margin-bottom: 40px;
 
-  font-family: $bebas-neue-font;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
+  @include desktop-title;
 }
 
 .contacts__content {
@@ -84,8 +81,7 @@
   .contacts h2 {
     margin-bottom: 35px;
 
-    font-size: 42px;
-    line-height: 42px;
+    @include tablet-title;
   }
 
   .contacts__list {
@@ -124,8 +120,7 @@
   }
 
   .contacts h2 {
-    font-size: 32px;
-    line-height: 32px;
+    @include mobile-title;
   }
 
   .contacts__content {

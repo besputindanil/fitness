@@ -38,11 +38,7 @@
   margin: 0;
   margin-bottom: 36px;
 
-  font-family: $bebas-neue-font;
-  font-weight: bold;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
+  @include desktop-title;
 }
 
 .subscription__time-list {
@@ -222,8 +218,7 @@
   .subscription h2 {
     margin-bottom: 30px;
 
-    font-size: 42px;
-    line-height: 42px;
+    @include tablet-title;
   }
 
   .subscription__time-list {
@@ -264,8 +259,7 @@
   .subscription h2 {
     margin-bottom: 23px;
 
-    font-size: 32px;
-    line-height: 32px;
+    @include mobile-title;
   }
 
   .subscription__time-list {

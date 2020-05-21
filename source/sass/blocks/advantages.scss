@@ -9,13 +9,9 @@
   margin: 0;
   margin-bottom: 70px;
 
-  font-family: $bebas-neue-font;
-  font-weight: bold;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
-
   text-align: center;
+
+  @include desktop-title;
 }
 
 .advantages__list {
@@ -229,8 +225,7 @@
   .advantages h2 {
     margin-bottom: 47px;
 
-    font-size: 42px;
-    line-height: 42px;
+    @include tablet-title;
   }
 
   .advantages__item {
@@ -355,8 +350,7 @@
   .advantages h2 {
     margin-bottom: 57px;
 
-    font-size: 32px;
-    line-height: 32px;
+    @include mobile-title;
   }
 
   .advantages__list {

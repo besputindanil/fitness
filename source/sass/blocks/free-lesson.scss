@@ -6,22 +6,18 @@
 .free-lesson__wrapper {
   max-width: 683px;
   margin-left: auto;
-  padding: 60px 170px 70px 103px;
+  padding: 67px 170px 70px 103px;
 
   box-sizing: border-box;
 }
 
 .free-lesson h2 {
   margin: 0;
-  margin-bottom: 29px;
-
-  font-family: $bebas-neue-font;
-  font-size: 49px;
-  line-height: 64px;
-  letter-spacing: 0.03em;
-  text-transform: lowercase;
+  margin-bottom: 38px;
 
   color: #ffffff;
+
+  @include desktop-title;
 }
 
 .free-lesson__form form {
@@ -108,8 +104,9 @@
   }
 
   .free-lesson h2 {
-    font-size: 42px;
-    line-height: 42px;
+    margin-bottom: 29px;
+
+    @include tablet-title;
   }
 
   .free-lesson__form label {
@@ -124,8 +121,7 @@
   }
 
   .free-lesson h2 {
-    font-size: 32px;
-    line-height: 32px;
+    @include mobile-title;
   }
 
   .free-lesson__form label {
