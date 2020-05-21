@@ -1,5 +1,6 @@
 .reviews {
-  padding-bottom: 120px;
+  padding-top: 17px;
+  padding-bottom: 116px;
 }
 
 .reviews h2 {
@@ -76,6 +77,11 @@
 }
 
 @media (max-width: $tablet-width) {
+  .reviews {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+
   .reviews h2 {
     margin-bottom: 40px;
 
@@ -93,6 +99,11 @@
 }
 
 @media (max-width: $mobile-width) {
+  .reviews {
+    padding-top: 10px;
+    padding-bottom: 70px;
+  }
+
   .reviews h2 {
     margin-bottom: 43px;
 

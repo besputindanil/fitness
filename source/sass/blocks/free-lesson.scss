@@ -1,0 +1,96 @@
+.free-lesson {
+  width: 50%;
+  background-color: #102654;
+}
+
+.free-lesson__wrapper {
+  max-width: 683px;
+  margin-left: auto;
+  padding: 60px 170px 70px 103px;
+
+  box-sizing: border-box;
+}
+
+.free-lesson h2 {
+  margin: 0;
+  margin-bottom: 29px;
+
+  font-family: $bebas-neue-font;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+
+  color: #ffffff;
+}
+
+.free-lesson__form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.free-lesson label {
+  width: calc((100% - 30px) / 2);
+  margin-right: 30px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.free-lesson input {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 7px 0;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #74819c;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+
+  &:hover {
+    border-color: #ffffff;
+  }
+
+  &:focus {
+    border-color: #ffffff;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+
+.free-lesson button {
+  width: 100%;
+  padding: 15px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    color: #102654;
+
+    background-color: #ffffff;
+  }
+
+  cursor: pointer;
+}
