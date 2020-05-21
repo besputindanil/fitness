@@ -39,7 +39,7 @@
                 Кардио-зона
               </li>
             </ul>
-            <a class="main-block__button button" href="#">Купить абонемент</a>
+            <a class="main-block__button button" href="#subscription">Купить абонемент</a>
           </div>
           <div class="main-block__image"></div>
           <ul class="main-block__social">
@@ -84,7 +84,7 @@
             </button>
           </div>
         </section>
-        <section class="subscription">
+        <section class="subscription" id="subscription">
           <div class="subscription__wrapper container tabs">
             <h2>Абонементы</h2>
             <ul class="subscription__time-list">
@@ -569,10 +569,10 @@
               <div class="free-lesson__form">
                 <form method="post">
                   <label aria-label="Ваше имя">
-                    <input type="text" name="user-name" placeholder="Имя" required="">
+                    <input type="text" id="user-name" name="user-name" minlength="2" maxlength="25" placeholder="Имя" required="">
                   </label>
                   <label aria-label="Ваш телефон">
-                    <input type="tel" name="user-phone" placeholder="Телефон" required="">
+                    <input type="tel" id="user-phone" name="user-phone" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон" required="">
                   </label>
                   <button type="submit">
                     Отправить
