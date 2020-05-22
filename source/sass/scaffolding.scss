@@ -41,8 +41,13 @@
   src: url("../fonts/BebasNeue-Bold.woff2") format("woff2"), url("../fonts/BebasNeue-Bold.woff") format("woff");
 }
 
+html {
+  height: 100%;
+}
+
 body {
   min-width: 320px;
+  height: 100%;
   margin: 0;
   padding: 0;
 
