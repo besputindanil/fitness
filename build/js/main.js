@@ -6,6 +6,13 @@ var mainBlockScroll = document.querySelector('.main-block__button');
 var subscriptionBlock = document.querySelector('#subscription');
 var tabToggles = document.querySelectorAll('.tabs__toggle');
 var tabItems = document.querySelectorAll('.tabs__item');
+var coachesList = document.querySelector('.coaches__list');
+var coachesTogglePrev = document.querySelector('.coaches__toggle--prev');
+var coachesToggleNext = document.querySelector('.coaches__toggle--next');
+var reviewsList = document.querySelector('.reviews__list');
+var reviewsTogglePrev = document.querySelector('.reviews__toggle--prev');
+var reviewsToggleNext = document.querySelector('.reviews__toggle--next');
+
 
 var animation = function (duration) {
   var temp;
@@ -30,7 +37,9 @@ var onMainBlockScroll = function (evt) {
   scrollMenu(subscriptionBlock);
 };
 
-mainBlockScroll.addEventListener('click', onMainBlockScroll);
+if (mainBlockScroll) {
+  mainBlockScroll.addEventListener('click', onMainBlockScroll);
+}
 
 var selectTabItem = function (name) {
   for (var i = 0; i < tabItems.length; i++) {
@@ -67,7 +76,7 @@ for (var i = 0; i < tabToggles.length; i++) {
 }
 
 $(document).ready(function () {
-  $('.coaches__list').slick({
+  $(coachesList).slick({
     arrows: false,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -89,27 +98,35 @@ $(document).ready(function () {
     ],
   });
 
-  $('.coaches__toggle--prev').click(function () {
-    $('.coaches__list').slick('slickPrev');
-  });
+  if (coachesTogglePrev) {
+    $(coachesTogglePrev).click(function () {
+      $(coachesList).slick('slickPrev');
+    });
+  }
 
-  $('.coaches__toggle--next').click(function () {
-    $('.coaches__list').slick('slickNext');
-  });
+  if (coachesToggleNext) {
+    $(coachesToggleNext).click(function () {
+      $(coachesList).slick('slickNext');
+    });
+  }
 });
 
 $(document).ready(function () {
-  $('.reviews__list').slick({
+  $(reviewsList).slick({
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
   });
 
-  $('.reviews__toggle--prev').click(function () {
-    $('.reviews__list').slick('slickPrev');
-  });
+  if (reviewsTogglePrev) {
+    $(reviewsTogglePrev).click(function () {
+      $(reviewsList).slick('slickPrev');
+    });
+  }
 
-  $('.reviews__toggle--next').click(function () {
-    $('.reviews__list').slick('slickNext');
-  });
+  if (reviewsToggleNext) {
+    $(reviewsToggleNext).click(function () {
+      $(reviewsList).slick('slickNext');
+    });
+  }
 });
