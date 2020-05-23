@@ -1,6 +1,7 @@
 .social {
   display: flex;
   flex-wrap: wrap;
+  width: 110px;
   margin: 0;
   padding: 0;
 
@@ -10,7 +11,7 @@
 .social__item {
   margin-right: 25px;
 
-  &:last-child {
+  &:nth-child(3n) {
     margin-right: 0;
   }
 }
@@ -23,6 +24,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .social {
+    width: 100px;
+  }
+
   .social__item {
     margin-right: 20px;
   }
@@ -31,11 +36,16 @@
 @media (max-width: $mobile-width) {
   .social {
     align-items: center;
+    width: 100%;
     margin-top: 14px;
   }
 
   .social__item {
     margin-right: 35px;
+
+    &:nth-child(3n) {
+      margin-right: 35px;
+    }
   }
 
   .social__icon {

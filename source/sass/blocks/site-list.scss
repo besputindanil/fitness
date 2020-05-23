@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   align-self: flex-start;
+  width: 430px;
   margin: 0;
   margin-left: 21px;
   padding: 0;
@@ -31,6 +32,7 @@
 @media (max-width: $tablet-width) {
   .site-list {
     align-self: center;
+    width: 390px;
   }
 
   .site-list__item {
@@ -42,6 +44,7 @@
   .site-list {
     align-self: flex-start;
     display: block;
+    width: 305px;
     margin-left: 0;
 
     column-count: 2;
@@ -53,7 +56,6 @@
   }
 
   .site-list__item {
-    margin-right: 60px;
     margin-bottom: 17px;
 
     &:first-child {
