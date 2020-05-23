@@ -1,18 +1,18 @@
-'use strict';
+"use strict";
 
 var SCROLL_DURATION = 500;
 
-var mainBlockScroll = document.querySelector('.main-block__button');
-var subscriptionBlock = document.querySelector('#subscription');
-var tabToggles = document.querySelectorAll('.tabs__toggle');
-var tabItems = document.querySelectorAll('.tabs__item');
-var coachesList = document.querySelector('.coaches__list');
-var coachesTogglePrev = document.querySelector('.coaches__toggle--prev');
-var coachesToggleNext = document.querySelector('.coaches__toggle--next');
-var reviewsList = document.querySelector('.reviews__list');
-var reviewsTogglePrev = document.querySelector('.reviews__toggle--prev');
-var reviewsToggleNext = document.querySelector('.reviews__toggle--next');
-
+var mainBlockScroll = document.querySelector(".main-block__button");
+var subscriptionBlock = document.querySelector("#subscription");
+var tabToggles = document.querySelectorAll(".tabs__toggle");
+var tabItems = document.querySelectorAll(".tabs__item");
+var coachesList = document.querySelector(".coaches__list");
+var coachesTogglePrev = document.querySelector(".coaches__toggle--prev");
+var coachesToggleNext = document.querySelector(".coaches__toggle--next");
+var reviewsList = document.querySelector(".reviews__list");
+var reviewsTogglePrev = document.querySelector(".reviews__toggle--prev");
+var reviewsToggleNext = document.querySelector(".reviews__toggle--next");
+var phoneInput = document.querySelector("#user-phone");
 
 var animation = function (duration) {
   var temp;
@@ -38,16 +38,16 @@ var onMainBlockScroll = function (evt) {
 };
 
 if (mainBlockScroll) {
-  mainBlockScroll.addEventListener('click', onMainBlockScroll);
+  mainBlockScroll.addEventListener("click", onMainBlockScroll);
 }
 
 var selectTabItem = function (name) {
   for (var i = 0; i < tabItems.length; i++) {
     var tabItem = tabItems[i];
     if (tabItem.classList.contains(name)) {
-      tabItem.classList.add('tabs__item--active');
+      tabItem.classList.add("tabs__item--active");
     } else {
-      tabItem.classList.remove('tabs__item--active');
+      tabItem.classList.remove("tabs__item--active");
     }
   }
 };
@@ -56,11 +56,11 @@ var selectTabToggle = function (evt) {
   evt.preventDefault();
   for (var i = 0; i < tabToggles.length; i++) {
     var tabToggle = tabToggles[i];
-    tabToggle.classList.remove('tabs__toggle--active');
+    tabToggle.classList.remove("tabs__toggle--active");
   }
 
-  evt.target.classList.add('tabs__toggle--active');
-  var tagName = evt.target.getAttribute('data-tab-name');
+  evt.target.classList.add("tabs__toggle--active");
+  var tagName = evt.target.getAttribute("data-tab-name");
   selectTabItem(tagName);
 };
 
@@ -71,7 +71,7 @@ var onTabToggleCLick = function (evt) {
 for (var i = 0; i < tabToggles.length; i++) {
   var tabToggle = tabToggles[i];
   if (tabToggle) {
-    tabToggle.addEventListener('click', onTabToggleCLick);
+    tabToggle.addEventListener("click", onTabToggleCLick);
   }
 }
 
@@ -100,13 +100,13 @@ $(document).ready(function () {
 
   if (coachesTogglePrev) {
     $(coachesTogglePrev).click(function () {
-      $(coachesList).slick('slickPrev');
+      $(coachesList).slick("slickPrev");
     });
   }
 
   if (coachesToggleNext) {
     $(coachesToggleNext).click(function () {
-      $(coachesList).slick('slickNext');
+      $(coachesList).slick("slickNext");
     });
   }
 });
@@ -120,13 +120,17 @@ $(document).ready(function () {
 
   if (reviewsTogglePrev) {
     $(reviewsTogglePrev).click(function () {
-      $(reviewsList).slick('slickPrev');
+      $(reviewsList).slick("slickPrev");
     });
   }
 
   if (reviewsToggleNext) {
     $(reviewsToggleNext).click(function () {
-      $(reviewsList).slick('slickNext');
+      $(reviewsList).slick("slickNext");
     });
   }
+});
+
+$(document).ready(function () {
+  $(phoneInput).inputmask("+7(999)999-99-99");
 });
