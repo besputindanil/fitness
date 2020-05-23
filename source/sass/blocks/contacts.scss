@@ -4,7 +4,7 @@
 
 .contacts__wrapper {
   max-width: 683px;
-  padding: 68px 120px 62px 120px;
+  padding: 68px 93px 62px 120px;
 }
 
 .contacts h2 {
@@ -20,7 +20,7 @@
 }
 
 .contacts__list {
-  width: 45%;
+  width: 50%;
   margin: 0;
   padding: 0;
 
@@ -85,8 +85,6 @@
   }
 
   .contacts__list {
-    width: 50%;
-
     &--left {
       padding-right: 40px;
       padding-left: 0;
