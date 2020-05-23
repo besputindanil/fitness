@@ -211,17 +211,23 @@
 @media (max-width: $mobile-width) {
   .promo-block {
     flex-direction: column;
-    align-items: center;
     padding-top: 70px;
     padding-bottom: 50px;
   }
 
   .promo-block__content {
-    width: 290px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .promo-block__header,
+  .promo-block p,
+  .promo-block__button {
+    width: 202px;
   }
 
   .promo-block__image {
-    width: 290px;
+    width: 100%;
 
     background-image: url("../img/bg-promo-block-mobile@1x.jpg");
 
