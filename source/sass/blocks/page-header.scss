@@ -8,8 +8,12 @@
 }
 
 .page-header__phone {
+  display: flex;
+  flex-direction: column;
   margin-top: -2px;
+}
 
+.page-header__phone-link {
   font-family: $bebas-neue-font;
   font-size: 26px;
   line-height: 26px;
