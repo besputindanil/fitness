@@ -1,6 +1,4 @@
 .gym {
-  position: relative;
-
   display: flex;
   flex-wrap: wrap;
   padding-top: 120px;
@@ -40,6 +38,10 @@
   line-height: 24px;
 }
 
+.gym__media-wrapper {
+  position: relative;
+}
+
 .gym__image {
   width: 660px;
   height: 401px;
@@ -57,8 +59,8 @@
 
 .gym__media {
   position: absolute;
-  top: 408px;
-  left: 458px;
+  bottom: -100px;
+  left: -64px;
 
   width: 364px;
   height: 228px;
@@ -161,7 +163,7 @@
   }
 
   .gym__media {
-    top: 587px;
+    bottom: -82px;
     left: 50%;
 
     width: 266px;
@@ -230,7 +232,7 @@
   }
 
   .gym__media {
-    top: 688px;
+    bottom: -205px;
     left: 50%;
 
     width: 320px;
