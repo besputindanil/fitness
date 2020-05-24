@@ -43,10 +43,19 @@
 .coaches__item {
   position: relative;
 
+  min-height: 294px;
+  padding: 50px 20px 20px 55px;
+
+  box-sizing: border-box;
+
   &:hover,
   &:focus {
+    background-color: rgba(16, 38, 84, 0.89);
+
     h3 {
-      bottom: 216px;
+      margin: 0;
+
+      text-align: left;
     }
 
     .coaches__description {
@@ -55,48 +64,44 @@
   }
 }
 
+.coaches__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+}
+
 .coaches__item img {
   display: block;
-  width: 260px;
   height: 294px;
 }
 
 .coaches h3 {
-  position: absolute;
-  bottom: 24px;
-  left: 0;
-  z-index: 2;
-
-  width: 100%;
   margin: 0;
+  margin-top: 194px;
+  margin-left: -33px;
 
   font-weight: bold;
   font-size: 18px;
   line-height: 27px;
   color: #ffffff;
-
   text-align: center;
 }
 
 .coaches__description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  position: relative;
 
   display: none;
-  width: 100%;
-  height: 100%;
-  padding: 74px 46px 58px 55px;
 
-  background-color: rgba(16, 38, 84, 0.89);
   box-sizing: border-box;
 }
 
 .coaches__specialization {
   display: inline-block;
   margin-left: 49px;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
 
   font-size: 16px;
   line-height: 24px;
@@ -115,6 +120,7 @@
 
 .coaches__achievement {
   position: relative;
+
   margin-bottom: 13px;
 
   font-size: 14px;
@@ -163,8 +169,11 @@
   }
 
   .coaches__item img {
-    width: 268px;
-    height: 294px;
+    display: block;
+  }
+
+  .coaches h3 {
+    margin-left: -29px;
   }
 }
 
@@ -192,8 +201,17 @@
     margin: 0;
   }
 
+  .coaches__item {
+    min-height: 274px;
+    padding: 43px 20px 20px 34px;
+  }
+
   .coaches__item img {
-    width: 226px;
     height: 274px;
+  }
+
+  .coaches h3 {
+    margin-top: 178px;
+    margin-left: -15px;
   }
 }
